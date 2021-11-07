@@ -1,6 +1,6 @@
 package stats
 
-import "github.com/FrankS17/bank/pkg/types"
+import "github.com/FrankS17/bank/v2/pkg/types"
 
 // Avg находмт среднюю сумму одного платежа
 func Avg(payments []types.Payment) types.Money {
@@ -12,6 +12,11 @@ func Avg(payments []types.Payment) types.Money {
 		if payment.Amount < 0 {
 			continue
 		}
+		
+		if payment.Status == types.StatusFail {
+			continue
+		}
+
 		sum += types.Money(payment.Amount)
 		count++
 	}
@@ -34,6 +39,10 @@ func TotalInCategory(payments []types.Payment,category types.Category) types.Mon
 		}
 
 		if payment.Category != category {
+			continue
+		} 
+
+		if payment.Status == types.StatusFail {
 			continue
 		}
 

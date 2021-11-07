@@ -1,4 +1,2 @@
-github.com/FrankS17/bank v0.0.0-20211107125621-d1d18b67bac2 h1:Oe3rWwkH0gb1RBx3nob5S+BAlejM19l7etTRq2dIryU=
-github.com/FrankS17/bank v0.0.0-20211107125621-d1d18b67bac2/go.mod h1:G2HCxL3B48Tr5o0Hsmqjbn2mKNL2wW/mqQs5FVw1A5I=
-github.com/FrankS17/bank v0.0.0-20211107130712-447252a2192e h1:72MB7JXEleQ8yDTLQFCS82/DbWlf3adQDVWbVUsIHc8=
-github.com/FrankS17/bank v0.0.0-20211107130712-447252a2192e/go.mod h1:G2HCxL3B48Tr5o0Hsmqjbn2mKNL2wW/mqQs5FVw1A5I=
+github.com/FrankS17/bank/v2 v2.0.0 h1:Ll+TO4BBqvhFtPxPG8aIu2BPK8BxNpKh0OjvbpjsJnY=
+github.com/FrankS17/bank/v2 v2.0.0/go.mod h1:/iONOQMn9erOddYhdhYGEALUl6u6FAqgu7hi0ovQz9k=
