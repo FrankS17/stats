@@ -1,4 +1,4 @@
-module github.com/FrankS17/stats
+module github.com/FrankS17/stats/v2
 
 go 1.17
 
