@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/FrankS17/bank/pkg/types"
+	"github.com/FrankS17/bank/v2/pkg/types"
 )
 
 func Example_Avg() {
@@ -11,36 +11,28 @@ func Example_Avg() {
 		{
 			ID:     1,
 			Amount: 20_00,
+			Status: types.StatusFail,
 		},
 		{
 			ID:     2,
 			Amount: 20_00,
+			Status: types.StatusOk,
 		},
 		{
 			ID:     3,
-			Amount: 20_00,
+			Amount: -20_00,
+			Status: types.StatusOk,
 		},
 		{
-			ID:     4,
-			Amount: -20_00,
-		},
-	{
-			ID:     4,
-			Amount: 25_00,
-		},
-	{
-			ID:     4,
-			Amount: 30_00,
-		},
-	{
-			ID:     4,
-			Amount: 20_00,
+			ID:     3,
+			Amount: 40_00,
+			Status: types.StatusOk,
 		},
 	}
 
 	fmt.Println(Avg(payment))
 	// Output: 
-	// 2250		
+	// 3000		
 	}
 
 	
